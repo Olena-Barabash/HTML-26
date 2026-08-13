@@ -1,0 +1,19 @@
+form {
+    width: 70%;
+}
+
+form,
+fieldset {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0.4rem;
+}
+
+.koko-rivin-leveys {
+    grid-column: 1 / -1;
+}
+
+button {
+    justify-self: end;
+    grid-column: 2;
+}
