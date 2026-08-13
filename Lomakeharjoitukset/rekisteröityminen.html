@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rekisteröityminen</title>
+    </head>
+    <body>
+        <style>
+            label,
+            button {
+                display: block;
+                margin-top: 10px;
+            }
+
+            input,
+            fieldset {
+                width: 50%;
+                padding: 5px;
+                margin-top: 10px;
+            }
+        </style>
+
+        <h1>Rekisteröityminen</h1>
+
+        <form>
+            <input type="text" id="nimi" name="nimi" placeholder="Nimi" />
+            <input
+                type="email"
+                id="sähköposti"
+                name="sähköposti"
+                placeholder="Sähköposti"
+            />
+            <input
+                type="password"
+                minlength="5"
+                id="salasana"
+                name="salasana"
+                placeholder="Salasana"
+            />
+            <input
+                type="password"
+                id="salasanan-vahvistus"
+                name="salasanan-vahvistus"
+                placeholder="Salasanan vahvistus"
+            />
+
+            <label for="syntymäpäivä">Syntymäpäivä</label>
+            <input type="date" id="syntymäpäivä" name="syntymäpäivä" />
+
+            <fieldset>
+                <legend>Käyttöehdot</legend>
+                <label for="käyttöehdot">Hyväksyn käyttöehdot</label>
+                <input
+                    type="checkbox"
+                    id="käyttöehdot"
+                    name="käyttöehdot"
+                    required
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>
