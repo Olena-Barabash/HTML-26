@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen Hero-kuva</title>
+</head>
+
+<body>
+    <style>
+        picture,
+        picture img {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+    <main>
+        <picture>
+            <source srcset="kuvat/kanenori-beach-large.jpg" media="(width>=600px)" />
+            <source srcset="kuvat/walkerssk-beach-1761410_1280.jpg" media="(width>=200px)" />
+            <img src="kuvat/kanenori-beach-small.jpg" alt="Kaneroni beach">
+        </picture>
+    </main>
+
+</body>
+
+</html>

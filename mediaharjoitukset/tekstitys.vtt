@@ -1,0 +1,494 @@
+Intro
+0.00
+hello and welcome to your first tutorial
+0.01
+on beginning HTML now if you watch the
+0.05
+introductory video we talked about what
+0.07
+you needed and I said that all you need
+0.10
+is notepad so so you should go ahead and
+0.13
+open up notepad now and that's all you
+0.15
+really need to follow this series now if
+0.17
+you have other editors you can go ahead
+0.19
+and use those as well so in this video
+0.22
+we're gonna create our very first web
+0.24
+page using HTML now web browsers can
+0.27
+display a lot of different documents
+0.29
+it's not just HTML they can display SVG
+0.34
+files XML files so the very first thing
+0.38
+we have to do is tell the browser what
+0.40
+type of file this is and we do that by
+0.43
+using the doctype declaration so this
+Doctype declaration
+0.46
+really isn't a HTML section it's just a
+0.49
+declaration and we're telling the
+0.51
+browser exactly what to open here and so
+0.54
+let's go ahead and type in doctype HTML
+0.56
+and we put an exclamation point there
+0.59
+we've type in doctype and we type in
+1.02
+HTML and it's that simple
+1.04
+so the browser moves in a top-down
+1.07
+manner so it'll hit this first it'll
+1.10
+realize that this is HTML and that's the
+1.12
+language that it's going to use to
+1.14
+render the web page now it used to be in
+1.17
+previous versions of HTML such as 4.01
+1.20
+you actually had to type out the version
+1.23
+here and while that might not seem like
+1.25
+a huge pain it becomes a pain if you
+1.27
+have hundreds of web pages every time
+1.30
+there was a new version you had to go
+1.32
+out here and put the new version in so
+1.34
+if there was a you know 4.5 you would
+1.36
+have to come in here and go ahead and
+1.38
+update that and that became a real pain
+1.40
+so somebody came up with a brilliant
+1.42
+idea that if you put HTML there it'll
+1.45
+load the most current version and the
+1.47
+current version is 5 so yes we're going
+1.50
+to be using HTML 5 in this tutorial and
+1.53
+what's nice about this is if an HTML 6
+1.56
+or an HTML 7 or 8 or 9 comes out in the
+1.59
+future you won't have to come back here
+2.01
+and change this you'll be using the very
+2.03
+current version of HTML just like we are
+2.07
+right now we're going to be using the
+2.08
+current version and if there's an HTML 6
+2.10
+this code will still be relevant it'll
+2.12
+still
+2.13
+using HTML 6 now the very first thing
+HTML element
+2.16
+that comes after the doctype declaration
+2.19
+is the HTML element and we create that
+2.23
+by typing in HTML and then if you'll
+2.26
+remember from the first video this is
+2.28
+the opening tag and we need a closing
+2.32
+tag so we put a slash here now this
+2.35
+really is not a section of our HTML
+2.38
+document it's more like a wrapper and
+2.40
+that is everything in our document we'll
+2.44
+go between this HTML element between
+2.47
+this opening tag and this closing tag
+2.50
+but you really can forget about this
+2.52
+because this I like to think of this as
+2.53
+kind of a behind-the-scenes thing is not
+2.56
+really something you need to be
+2.58
+concerned about it's just kind of like a
+2.59
+starting and ending point that tells the
+3.02
+browser where the HTML starts and where
+3.04
+the HTML ends but again you can kind of
+3.07
+forget about it let's just create some
+3.08
+spaces here and there it is
+3.10
+okay so there's not a lot of action
+3.12
+going on there we just need those and
+3.14
+that's that and again it's really not a
+3.17
+section it's more of a wrapper where we
+3.19
+put all of our code into okay now the
+3.22
+first real section that we need that
+3.24
+comes after HTML is called the head
+3.26
+section and you guessed it we need a
+3.29
+head tag and we need a closing tag which
+3.33
+will make up the head element and so we
+3.36
+put our usable slash here and now we've
+3.39
+got our first real section now this is
+3.42
+also not a huge section that you need to
+3.44
+be concerned about we'll be using this
+3.46
+section a little bit more in the future
+3.47
+but this isn't again a real critical
+3.50
+section but we will do one thing today
+3.51
+here now the head section contains a lot
+3.55
+of information about the page itself and
+3.58
+so this is stuff like the title of the
+4.00
+page that's actually the only thing that
+4.02
+you'll really display here is the title
+4.04
+of the page that goes in the top menu
+4.05
+and we'll do that in a few minutes but
+4.07
+also can be used to identify the
+4.09
+language of the page like if it's in
+4.10
+Swedish or French German and so on now
+4.14
+there are also some other areas that
+4.16
+we'll get to in the future we don't need
+4.18
+to be worried about these right now but
+4.19
+there are something called meta tags
+4.21
+well but we'll get to that at a later
+4.24
+time
+4.24
+you also put in some of your JavaScript
+4.26
+references here but we'll get into that
+4.28
+later as well but for now we're just
+4.30
+gonna put the title element inside our
+4.32
+head section and again the title element
+4.35
+is what shows up in the title bar of the
+4.38
+web browser and we'll see that when we
+HTML title
+4.40
+render this page a little bit later and
+4.41
+so within our head element we're going
+4.44
+to embed another element and you guessed
+4.46
+it it's called title and we're gonna go
+4.49
+ahead and just say my web page whatever
+4.52
+that is and then yes we need a closing
+4.56
+tag and now we've got our title element
+4.59
+and we've got our title that will be
+5.02
+displayed if this was the web browser
+5.04
+would be displayed up here and we'll see
+5.06
+that in a few moments so that's all we
+5.07
+need to be concerned about right now and
+5.08
+let's move on to the body section and
+5.11
+this is where all of the action takes
+5.14
+place this is really the heart and soul
+5.16
+of your web page and it needs also a
+5.19
+closing tag as well and so again it all
+5.24
+happens right in here this is the
+5.26
+primary section of your web page and
+5.29
+pretty much everything that's between
+5.31
+these two tags in the body element will
+5.33
+show up on your web page with a few
+5.36
+exceptions of course this title up here
+5.37
+will actually be displayed on the menu
+5.39
+bar but everything else that's displayed
+5.41
+to the user will be done within the body
+5.44
+element and so let's talk about that
+5.46
+right now
+5.47
+so now we need to insert something
+5.49
+within our body tags in this tutorial
+5.52
+we're just gonna insert some simple
+5.55
+headings and some simple text that's all
+5.57
+now obviously later on we'll get to
+5.59
+images and hyperlinks and a lot more but
+6.01
+today we're just gonna insert some
+6.03
+simple text along with some simple
+6.05
+headings so the first thing we need is a
+6.07
+heading and you use the H tag for that
+6.10
+and it's h1 and then we're gonna close
+6.13
+that tag as well and what this does is
+6.16
+we'll create larger text because this is
+6.18
+gonna identify a section of our website
+6.21
+so we're gonna call this the fish
+6.24
+website and there we go
+6.29
+and so again that's the text for our
+6.31
+header and so all the text will be
+6.34
+contained in there for our header now we
+6.36
+want to say what this websites about and
+6.38
+so let's use the P
+6.40
+and to create that so we'll go ahead and
+6.42
+create a P tag and we'll create an
+6.50
+ending P tag and what the P element does
+6.54
+is it creates a paragraph and obviously
+6.56
+it stands for paragraph for any text
+6.58
+that we want to put in a paragraph so
+6.59
+we're gonna say welcome to the fish
+7.03
+website everything you want to know
+7.09
+about fish is in this website there we
+7.17
+go and so again this ending tag says hey
+7.19
+the paragraph ends here and it'll go on
+7.21
+to the next tag which is going to be
+7.24
+actually another header because we're
+7.25
+going to identify another section of
+7.27
+this website so we're going to go ahead
+7.29
+and use the H tag but in this case you
+7.32
+make this h2 and what this tag does it's
+7.35
+the text is a little bit smaller because
+7.38
+this isn't the main section it's just
+7.40
+another section under this section so
+7.43
+you'll notice that the text within this
+7.44
+element this h2 element will be a little
+7.47
+bit smaller so we're gonna say this is a
+7.50
+section on bass fish and then we'll go
+7.55
+ahead and just go ahead and close this
+7.57
+out with h2 and then we're gonna go
+8.03
+ahead and create another paragraph with
+8.05
+text and we're gonna say you know bass
+8.10
+fish live in lakes that's great okay and
+8.15
+so that's all we need and so now let's
+8.17
+go ahead and render this and see how
+8.18
+these headers and paragraphs are
+8.20
+displayed in our first web page so you
+8.23
+want to go ahead and hit save as and
+8.25
+we're gonna call this test I'm gonna
+8.27
+save this on the desktop make sure you
+8.29
+put test dot HTML and then we'll go
+8.32
+ahead and minimize this and now all you
+8.35
+have to do is go ahead and double click
+8.36
+our HTML file and there you see we have
+8.40
+our first web page and you can see here
+8.43
+the h1 tag formatted it with the largest
+8.45
+text and then here is our paragraph and
+8.48
+you can see it made it just regular size
+8.50
+now later on I'll show you how we can
+8.51
+adjust the font size here
+8.53
+it creates a standard font size for this
+8.55
+paragraph and then we created our second
+8.57
+header which is right here and you'll
+8.58
+see that it's a little bit smaller than
+9.00
+the text up here right the text size up
+9.02
+here it's a little bit smaller and then
+9.04
+we had our other paragraph in which we
+9.06
+said bash fish live in lakes and so this
+9.08
+is the very first webpage now we're
+9.10
+going to explore many more HTML tags
+9.13
+this is just a bare-bones site but I
+9.15
+hope you get the idea now how the
+9.16
+structure works in HTML that's the basic
+9.19
+structure and if you can understand that
+9.21
+you're well on your way to understanding
+9.23
+HTML now I will point out that this is a
+9.26
+good way to test your HTML now later on
+9.28
+I will show you how to upload these
+9.30
+files to a web server and then you would
+9.33
+be live people can actually see this out
+9.35
+on the Internet but for our purposes now
+9.37
+we can just double click on the HTML
+9.39
+file on our desktop and do the testing
+9.41
+here and that's a great way to test your
+9.43
+HTML to see if it works now I just want
+9.46
+to make a couple more points before we
+9.47
+close this video out you'll notice that
+9.50
+under the header sections here the H
+9.52
+tags will give will format the text with
+9.55
+bold so you can see that right here this
+9.57
+text is in bold both headers do that and
+10.00
+of course you can see the title that we
+10.02
+added my web page it's right up here ok
+10.05
+that's going to do it for this tutorial
+10.07
+I will see you guys in the next tutorial
