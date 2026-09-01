@@ -1,0 +1,38 @@
+body {
+    background-color: #AA7D39;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1% 5%;
+
+    line-height: 150%;
+}
+
+h1 {
+    margin: 1.5em 1em;
+}
+
+.navigointipalkki ul {
+    list-style-type: none;
+
+
+}
+
+.navigointipalkki li {
+    float: left;
+    background-color: #d3b42c;
+}
+
+.navigointipalkki a {
+    color: white;
+    overflow: hidden;
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.navigointipalkki a:hover {
+    background-color: #19171E;
+}
+
+.kuva {
+    float: right;
+}
