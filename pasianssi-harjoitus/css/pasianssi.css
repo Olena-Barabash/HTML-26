@@ -7,14 +7,22 @@ body {
     line-height: 150%;
 }
 
+header {
+    height: 1.5em;
+}
+
 h1 {
     margin: 1.5em 1em;
 }
 
+/* figcaption {
+    clear: left;
+} */
+
+
+
 .navigointipalkki ul {
     list-style-type: none;
-
-
 }
 
 .navigointipalkki li {
@@ -33,6 +41,25 @@ h1 {
     background-color: #19171E;
 }
 
+.navigointipalkki a.active-page {
+    color: brown;
+    background-color: darkgrey;
+}
+
 .kuva {
-    float: right;
+    display: block;
+    float: left;
+}
+
+.videot {
+    width: 512px;
+    height: 288px;
+    float: left;
+    position: relative;
+    padding: 0px;
+    margin: 20px;
+}
+
+.vieraskirja {
+    text-align: center;
 }
