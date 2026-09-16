@@ -1,0 +1,67 @@
+article>h2 {
+    color: red;
+}
+
+h2+p {
+    color: green;
+}
+
+article p {
+    font-style: italic;
+}
+
+article p:last-child {
+    font-weight: 900;
+}
+
+input[type="email"] {
+    background-color: yellow;
+}
+
+input[required] {
+    border: 2px solid red;
+}
+
+:focus-visible {
+    color: orange;
+    font-style: italic;
+}
+
+:checked {
+    margin: 10px;
+    background-color: purple;
+}
+
+.form-group:has(input:invalid) {
+    background-color: palevioletred;
+}
+
+/* label:where(input[type="checkbox"])::after {
+    display: block;
+    content: "";
+} */
+label:has(input[type="checkbox"]) {
+    display: block;
+    /* clear: both;
+    content: ""; */
+}
+
+/* 
+p {
+    color: black;
+}
+
+.card p {
+    color: blue;
+}
+
+.card .lead {
+    color: purple;
+}
+
+/* #intro .lead { */
+/*.lead {
+    color: green;
+}
+
+*/

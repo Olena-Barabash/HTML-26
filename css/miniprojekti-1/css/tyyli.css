@@ -1,0 +1,201 @@
+.button {
+    display: block;
+    border: 1px solid green;
+    border-radius: 0.5em;
+    background-color: lightgreen;
+    width: 8em;
+    height: 2em;
+    margin: 15px;
+}
+
+.button:hover,
+.card:hover {
+    transform: translate(2px);
+    box-shadow: 1px 1px 2px green;
+}
+
+
+.card {
+    display: inline-block;
+    text-align: justify;
+    width: 40%;
+    height: 30%;
+    margin: 15px;
+    padding: 15px 15px 0 15px;
+    border: 1px solid green;
+    border-radius: 0.3em;
+}
+
+.alert {
+    color: red;
+    font-weight: 900;
+}
+
+
+:where(.alert) ::before {
+    content: "!!! ";
+}
+
+/* .card:hover {
+    animation: spin 2s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+} */
+
+
+/* .card {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+} */
+
+/* .card-container {
+    perspective: 800px;
+}
+
+.card {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+} */
+
+/* .card {
+    background: linear-gradient(120deg,
+            #ff0080,
+            #7928ca,
+            #00bfff,
+            #00ff88);
+
+    background-size: 300% 300%;
+    animation: gradient-flow 5s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+/* =========================== */
+/* .card {
+    background: linear-gradient(120deg,
+            #ff0080,
+            #7928ca,
+            #00bfff,
+            #00ff88);
+
+    background-size: 300% 300%;
+
+    animation:
+        spin 3s linear infinite,
+        gradient-flow 5s ease infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+
+/* ===================================== */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background: #020617;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.card::before {
+    background: #006eff;
+    top: 10%;
+    left: -20%;
+    animation: flow1 7s ease-in-out infinite alternate;
+}
+
+.card::after {
+    background: #00c6ff;
+    bottom: -10%;
+    right: -20%;
+    animation: flow2 9s ease-in-out infinite alternate;
+}
+
+@keyframes flow1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(80px, 40px) scale(1.4);
+    }
+}
+
+@keyframes flow2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(-100px, -50px) scale(1.3);
+    }
+}
