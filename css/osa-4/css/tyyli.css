@@ -1,0 +1,37 @@
+/* .block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.box {
+    background-color: lightgreen;
+    width: 230px;
+    height: 200px;
+    margin: 80px;
+    padding: 10px;
+    border: 2px solid green;
+
+} */
+
+
+nav li {
+    display: inline-block;
+    background-color: lightseagreen;
+    padding: 10px 20px;
+    margin: 0 5px;
+    list-style: none;
+    text-decoration: none;
+    /* list-style-type: disc; */
+}
+
+nav li:hover {
+    opacity: 70%;
+    box-shadow: 4px 4px 5px grey;
+}
