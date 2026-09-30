@@ -1,0 +1,39 @@
+.features {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.card {
+    position: relative;
+    background-color: rgba(144, 238, 144, 0.5);
+    border: 1.5px solid green;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-bottom: 1.8rem;
+}
+
+.card-text {
+    max-height: 10rem;
+    overflow: hidden;
+
+    mask-image: linear-gradient(to bottom,
+            black 70%,
+            transparent 100%);
+}
+
+.read-more {
+    /* display: inline-block; */
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2rem 5vw 4rem);
+}
+
+@media (min-width: 900px) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

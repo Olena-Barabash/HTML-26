@@ -1,0 +1,25 @@
+:root {
+    --bg: white;
+    --surface: rgb(87, 154, 158);
+    --text: black;
+    --accent: blue;
+    --danger: red;
+}
+
+main {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+button {
+    background-color: var(--surface);
+    padding: 0.5rem;
+}
+
+.ilmoitus {
+    color: var(--accent);
+}
+
+input+.ilmoitus {
+    color: var(--danger);
+}

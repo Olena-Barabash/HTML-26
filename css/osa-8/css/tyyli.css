@@ -1,0 +1,23 @@
+h1,
+h2 {
+    font-size: clamp(2rem, 25vw, 3rem);
+    text-align: center;
+}
+
+.features {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: rgba(144, 238, 144, 0.5);
+    border: 1.5px solid green;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+@media (width >=48rem) {
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
