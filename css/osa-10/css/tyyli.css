@@ -1,0 +1,39 @@
+:root {
+    --text-body: 1rem;
+    --text-small: 0.8rem;
+    --text-h1: 3rem;
+    --text-h2: 2rem;
+    --text-h3: 1.5rem;
+    --text-pre: 1.2rem;
+    --leading-body: 1.65;
+}
+
+body,
+a {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+}
+
+article {
+    max-width: 65ch;
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+small {
+    font-size: var(--text-small);
+}
+
+pre {
+    font-size: var(--text-pre);
+}
