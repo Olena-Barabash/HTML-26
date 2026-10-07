@@ -20,6 +20,8 @@
   --vari-kappaleen-teksti: #475569;
   --vari-ensisijainen-tumma: #6d28d9;
   --vari-tausta: #f8fafc;
+  --vari-alapalkin-tausta: var(--vari-toissijainen);
+  --vari-alapalkin-teksti: var(--vari-lisä);
 
 
   /* Välit */
@@ -35,25 +37,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --vari-ensisijainen: #2D1B69;
-    --vari-toissijainen: #F5F3FF;
-    --vari-lisä: #ffffff;
-    --vari-kappaleen-teksti: #B8B4C7;
-    --vari-ensisijainen-tumma: #6d28d9;
-    --vari-tausta: #12111a;
+    --vari-ensisijainen: #8b5cf6;
+    --vari-toissijainen: #f1f5f9;
+    --vari-lisä: #1e293b;
+    --vari-kappaleen-teksti: #cbd5e1;
+    --vari-ensisijainen-tumma: #a78bfa;
+    --vari-tausta: #0f172a;
+    --vari-alapalkin-tausta: #020617;
+    --vari-alapalkin-teksti: var(--vari-ensisijainen);
   }
-
 }
-
-/* [data-theme="tumma"] {
-  --vari-ensisijainen: #2D1B69;
-  --vari-toissijainen: #F5F3FF;
-  --vari-lisä: #ffffff;
-  --vari-kappaleen-teksti: #B8B4C7;
-  --vari-ensisijainen-tumma: #6d28d9;
-  --vari-tausta: #12111a;
-} */
-
 
 * {
   box-sizing: border-box;
@@ -183,8 +176,8 @@ body {
 }
 
 footer {
-  background: var(--vari-toissijainen);
-  color: var(--vari-lisä);
+  background: var(--vari-alapalkin-tausta);
+  color: var(--vari-alapalkin-teksti);
   padding: var(--vali-tila-keskisuuri) var(--vali-tila-normaali);
   text-align: center;
 }
