@@ -1,0 +1,190 @@
+/*
+  HARJOITUKSEN ALOITUSTIEDOSTO
+  ---------------------------
+  Tässä CSS:ssä toistetaan tarkoituksella samoja arvoja.
+
+  Tehtävä:
+  1. Etsi toistuvat värit, välit ja pyöristykset.
+  2. Luo :rootiin semanttiset tokenit ja korvaa toistuvat arvot var()-kutsuilla.
+  3. Lisää tumma teema vaihtamalla vain tokenien arvoja.
+  4. Haaste: tee typografia ja section-spacing fluidiksi clamp()-funktiolla.
+
+  Älä muuta HTML:ää ensimmäisiä kolmea vaihetta varten.
+*/
+
+:root {
+  /* Värit */
+  --vari-ensisijainen: #7c3aed;
+  --vari-toissijainen: #1e293b;
+  --vari-lisä: #ffffff;
+  --vari-kappaleen-teksti: #475569;
+  --vari-ensisijainen-tumma: #6d28d9;
+  --vari-tausta: #f8fafc;
+
+
+  /* Välit */
+  --vali-tila-suuri: 4rem;
+  --vali-tila-keskisuuri: 2rem;
+  --vali-tila-keskipieni: 1.5rem;
+  --vali-tila-normaali: 1rem;
+  --vali-tila-pieni: 0.5rem;
+
+  /* Pyöristykset */
+  --pyoristys: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vari-ensisijainen: #2D1B69;
+    --vari-toissijainen: #F5F3FF;
+    --vari-lisä: #ffffff;
+    --vari-kappaleen-teksti: #B8B4C7;
+    --vari-ensisijainen-tumma: #6d28d9;
+    --vari-tausta: #12111a;
+  }
+
+}
+
+/* [data-theme="tumma"] {
+  --vari-ensisijainen: #2D1B69;
+  --vari-toissijainen: #F5F3FF;
+  --vari-lisä: #ffffff;
+  --vari-kappaleen-teksti: #B8B4C7;
+  --vari-ensisijainen-tumma: #6d28d9;
+  --vari-tausta: #12111a;
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--vari-tausta);
+  color: var(--vari-toissijainen);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(100% - var(--vali-tila-keskisuuri), 70rem);
+  margin-inline: auto;
+}
+
+.hero {
+  background: var(--vari-ensisijainen);
+  color: var(--vari-lisä);
+  padding: var(--vali-tila-suuri) var(--vali-tila-normaali);
+}
+
+.hero h1 {
+  margin: 0 0 var(--vali-tila-normaali);
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin: 0 0 var(--vali-tila-pieni);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lead {
+  max-width: 48rem;
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.intro {
+  padding: var(--vali-tila-suuri) 0 var(--vali-tila-keskisuuri);
+}
+
+.intro h2,
+.notice h2 {
+  margin-top: 0;
+  color: var(--vari-ensisijainen);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--vali-tila-normaali);
+  padding: var(--vali-tila-keskisuuri) 0 var(--vali-tila-suuri);
+}
+
+.card {
+  background: var(--vari-lisä);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--pyoristys);
+  padding: var(--vali-tila-keskipieni);
+  box-shadow: 0 8px 24px rgb(15 23 42 / 0.08);
+}
+
+.card h2 {
+  margin: var(--vali-tila-normaali) 0 var(--vali-tila-pieni);
+  color: var(--vari-toissijainen);
+}
+
+.card p {
+  margin: 0 0 var(--vali-tila-keskipieni);
+  color: var(--vari-kappaleen-teksti);
+}
+
+.card--important {
+  border: 2px solid var(--vari-ensisijainen);
+}
+
+.badge {
+  display: inline-block;
+  background: #ede9fe;
+  color: var(--vari-ensisijainen-tumma);
+  border-radius: 999px;
+  padding: var(--vali-tila-pieni) var(--vali-tila-normaali);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.button {
+  display: inline-block;
+  background: var(--vari-ensisijainen);
+  color: var(--vari-lisä);
+  border-radius: var(--pyoristys);
+  padding: var(--vali-tila-pieni) var(--vali-tila-normaali);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: var(--vari-ensisijainen-tumma);
+}
+
+.button--accent {
+  background: #dc2626;
+}
+
+.button--accent:hover {
+  background: #b91c1c;
+}
+
+.notice {
+  margin-bottom: var(--vali-tila-suuri);
+  background: var(--vari-lisä);
+  border-left: 5px solid var(--vari-ensisijainen);
+  border-radius: var(--pyoristys);
+  padding: var(--vali-tila-keskipieni);
+  box-shadow: 0 8px 24px rgb(15 23 42 / 0.08);
+}
+
+.notice p {
+  margin-bottom: 0;
+  color: var(--vari-kappaleen-teksti);
+}
+
+footer {
+  background: var(--vari-toissijainen);
+  color: var(--vari-lisä);
+  padding: var(--vali-tila-keskisuuri) var(--vali-tila-normaali);
+  text-align: center;
+}
