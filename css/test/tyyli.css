@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.card__title {
+    flex: 1 1 auto;
+    /* white-space: nowrap; */
+    /* white-space: wrap; */
+    font-size: clamp(0.5rem, 4vw, 3rem);
+}
+
+.card__button {
+    margin-inline-start: auto;
+}
